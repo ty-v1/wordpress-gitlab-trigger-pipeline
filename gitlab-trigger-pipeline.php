@@ -12,6 +12,9 @@ Copyright: Kim T
 
 add_action('publish_page', 'publish_static_hook');
 add_action('publish_post', 'publish_static_hook');
+add_action('trashed_post', 'publish_static_hook');
+add_action('untrashed_post', 'publish_static_hook');
+add_action('edit_post', 'publish_static_hook');
 
 function publish_static_hook($id)
 {
